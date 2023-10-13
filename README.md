@@ -27,7 +27,22 @@ git clone https://github.com/Anak1n1337/curso-frontend.git
  - git add *
  - git commit -m "mensagem"
  - git push (para enviar alterações para o repositório)
+ - git pull (puxar / trazer alterações do GitHub para sua máquina)
 
 ## Gitflow
  - Fluxo do Git
  
+### Branchs
+são ramificações / versões pararelas
+
+- main / master (vai para produção, quando o projeto é publicado )
+- develop
+- DOD Definition of Done: critérios de aceite
+- versionamento 1.0.0
+
+git checkout -b dev (cria uma branch)
+git checkout master (muda de branch)
+
+
+### Merge
+Mescla de branchs
