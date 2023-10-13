@@ -18,6 +18,7 @@
 ## Criar conta no Github
 
 ## Clonar o projeto
+git clone https://github.com/Anak1n1337/curso-frontend.git
 
 ## Commits
  Informação de alteração
