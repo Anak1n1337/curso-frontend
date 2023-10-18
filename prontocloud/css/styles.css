@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background: #fff;
+    background: #e7e7e7;
     display: block;
     float: left;
     padding: 20px;
@@ -151,4 +151,48 @@ footer small {
 .cognito {
     height: 350px !important;
     overflow: hidden !important;
+}
+
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%; 
+    }
+}
+
+@media (max-width: 1180px) {
+    .article {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    section nav,
+    section article {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    .container{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    section nav,
+    section article {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 }
