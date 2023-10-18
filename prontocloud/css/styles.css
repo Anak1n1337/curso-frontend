@@ -18,8 +18,9 @@ body {
     display: block;
     float: left;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -60,6 +61,24 @@ h4 {
 p {
     margin-bottom: 10px;
     line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+.cog-form__container {
+    background-color: #b8c8d6 !important;
+}
+
+.cog-label, :root:root:root:root:root .cog-label {
+    color: #254159 !important;
 }
 
 ol {
@@ -129,3 +148,7 @@ footer small {
     display: block;
 }
 
+.cognito {
+    height: 350px !important;
+    overflow: hidden !important;
+}
