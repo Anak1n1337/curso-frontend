@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    {
+        "name": "Launch Chrome",
+        "request": "launch",
+        "type": "chrome",
+        "url": "C:/Users/ANAKIN/Desktop/frontend/html/curso-frontend/prontocloud",
+        "webRoot": "${workspaceFolder}"
+    }
+    ]
+}
