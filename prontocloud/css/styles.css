@@ -287,3 +287,12 @@ dd {
     margin-bottom: 20px;
     font-size: 1.4rem;
 }
+
+#section1 {
+    background-color: #fff;
+    display: block;
+    float: left;
+    font-size: 1.5rem; /* equivalente a 15px */
+    padding: 20px;
+    width: 100%;
+}
