@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>Soms uma loja especializa em artigos de moda masculinos e femininos!</p>
+                    
+                    <a class="btn btn-lg btn-success">Saiba mais</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/sobrenois.jpg" alt="Sobre nois" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Produtos</h2>
+
+                    <div class="card">
+                        <img src="./images/camiseta.jpg" alt="Camiseta Pac-Man" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Pac-Man</h5>
+                            <p class="card-text">Camiseta pac-man, disponível em vários preços e tamanhos.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/oculosdesol.jpg" alt="Óculos" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Óculos de sol</h5>
+                            <p class="card-text">Óculos de sol para seu estilo.</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/airjordan.jpg" alt="Tênis air Jordan" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Tênis air Jordan</h5>
+                            <p class="card-text">Tênis air Jordan, disponível em vários tamanhos!</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                    
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" data-bd-backdrop="static" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Camiseta</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira o tamanho e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 25</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 50</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 70</td>
+                            </tr>
+                            <tr>
+                                <td>GG</td>
+                                <td>R$ 85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" data-bd-backdrop="static" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Óculos de sol</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira as cores e o preço!</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>R$ 100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" data-bd-backdrop="static" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tênis air Jordan</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e o preço!</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanhos</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>39/40</td>
+                                <td>R$ 500</td>
+                            </tr>
+                            <tr>
+                                <td>41/42</td>
+                                <td>R$ 500</td>
+                            </tr>
+                            <tr>
+                                <td>43/44</td>
+                                <td>R$ 500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,10 +1,17 @@
 {
     "configurations": [
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
     {
         "name": "Launch Chrome",
         "request": "launch",
         "type": "chrome",
-        "url": "C:/Users/ANAKIN/Desktop/frontend/html/curso-frontend/javascript",
+        "url": "file:///C:/Users/ANAKIN/Desktop/frontend/html/curso-frontend/bootstrap/projeto/",
         "webRoot": "${workspaceFolder}"
     }
     ]
