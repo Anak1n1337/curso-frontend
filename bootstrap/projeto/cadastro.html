@@ -42,40 +42,63 @@
                         <div class="col">
                             <div class="input-group">
                                 <label for="nome" class="col-form-label col-form-label-sm">Nome completo</label>
-                                <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                                <input class="form-control" type="text" name="nome" placeholder="Digite seu nome completo" required>
                             </div>
                         </div>
+
                         <div class="col">
                             <div class="input-group">
-                                <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail">
+                                <label for="nome" class="col-form-label col-form-label-sm">Email</label>
+                                <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail" required>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="telefone" class="col-form-label col-form-label-sm">Telefone</label>
+                            <input type="text" id="telefone" class="form-control" placeholder="Digite um número de telefone">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
                             <label for="endereco" class="col-form-label col-form-label-sm">Endereço completo</label>
-                            <input type="text" id="endereco" class="form-control" placeholder="Endereço completo">
+                            <input type="text" id="endereco" class="form-control" placeholder="Endereço completo" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="complemento" class="col-form-label col-form-label-sm">Complemento</label>
+                            <input type="text" id="complemento" class="form-control" placeholder="Digite o nome da sua rua" required>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
                             <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
-                            <input type="text" name="cidade" id="cidade" class="form-control">
+                            <input type="text" name="cidade" id="cidade" class="form-control" required>
                         </div>
+
                         <div class="col">
                             <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
-                            <select name="estado" id="estado" class="form-control">
+                            <select name="estado" id="estado" class="form-control" required>
                                 <option value="">Selecione um estado</option>
                                 <option value="sp">SP</option>
                                 <option value="al">AL</option>
                                 <option value="mg">MG</option>
                             </select>
                         </div>
+
+                        <div class="col">
+                            <label for="bairro" class="col-form-label col-form-label-sm">Bairro</label>
+                            <input type="text" name="bairro" id="bairro" class="form-control" required>
+                        </div>
+
                         <div class="col">
                             <label for="cep" class="col-form-label col-form-label-sm">Cep</label>
-                            <input type="text" name="cep" id="cep" class="form-control">
+                            <input type="text" name="cep" id="cep" class="form-control" required>
                         </div>
                     </div>
                    
@@ -119,7 +142,7 @@
                     <form class="form-inline">
                         <div class="row">
                             <div class="form-group col-4">
-                                <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="nome">
+                                <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="nome" required>
                             </div>
                             <div class="form-group col-4">
                                 <input type="text" class="form-control form-control-sm mb-2" name="e-mail" placeholder="e-mail" required>
