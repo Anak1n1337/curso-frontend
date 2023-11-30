@@ -54,12 +54,42 @@ $(document).ready(function(){
    * entendendo ações que começam ao tesrmino de outra
    */ 
    $('.featured-item:nth(1)')
-      .hide(2000, function(){
+   .hide(2000, function(){
       // este é o callback
-         console.log($(this).find('h4').text() + 'esgotado')
-      })
-      .show(2000, function(){
-         console.log($(this).find('h4').text() + 'em estoque')
-      })
+      console.log($(this).find('h4').text() + 'esgotado')
+   })
+   .show(2000, function(){
+      console.log($(this).find('h4').text() + 'em estoque')
+   })
    
+   
+   /*
+   * Animações 
+   */
+   const duracao = 1000
+   
+   $('.featured-item:nth(0)')
+   .hide(duracao)
+   .show(duracao)
+   .fadeOut(duracao)
+   .fadeIn(duracao)
+   .toggle(duracao)
+   .toggle(duracao)
+   
+   
+   $('#form-submit').on('click', function(e){
+      
+      e.preventDefault()
+      
+      if( $('#email').val() != '' ){
+         $('#email').animate({
+            opacity: "toggle",
+            top:"-50"
+
+         }, duracao, function(){
+            console.log($(this).val())
+         })
+      }
+      
+   });
 })

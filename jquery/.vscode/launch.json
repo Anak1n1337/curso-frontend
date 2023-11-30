@@ -4,7 +4,7 @@
         "name": "Launch Chrome",
         "request": "launch",
         "type": "chrome",
-        "url": "C:/Users/Anakin/Desktop/frontend/html/curso-frontend/jquery/index.html",
+        "url": "C:/Users/anakin1337/Desktop/frontend/html/curso-frontend/jquery/index.html",
         "webRoot": "${workspaceFolder}"
     }
     ]
