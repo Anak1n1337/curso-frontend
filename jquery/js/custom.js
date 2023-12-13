@@ -85,11 +85,87 @@ $(document).ready(function(){
          $('#email').animate({
             opacity: "toggle",
             top:"-50"
-
+            
          }, duracao, function(){
             console.log($(this).val())
          })
       }
       
    });
-})
+   
+   /*
+   * Ouvinte de eventos .nav-modal-open 
+   */
+   $('.nav-modal-open').on('click', function(e){
+      e.preventDefault();
+      
+      let elem = $(this).attr('rel')
+      
+      $('.modal-body').html($('#' + elem).html())
+      
+      $('.modal-header h5.modal-tittle').html($(this).text())
+      
+      let myModal = new bootstrap.Modal($('#modalId'))
+      
+      myModal.show()
+      
+   })
+   
+   /**
+   * TODO: incrementar a validação 
+   * - Checar se o nome é vaĺido (mais de 2 caracteres)
+   * - Checar se o e-mail é vaĺido com ao menos um "@" e "."
+   * - Checar se o CPF  é válido com regex
+   */
+   
+   function validate(elem){
+      if(elem.val() == ''){
+         
+         console.log('o campo de '+ elem.attr('name') + ' é obrigatório')
+         elem.parent().find('.text-muted').show()
+         elem.addClass('invalid')
+         
+         return false
+         
+      } else {
+         elem.parent().find('.text-muted').hide()
+         elem.removeClass('invalid')
+      }
+   }
+   
+   /* validação do submit do form */
+   $('body').on('submit', 'modal-body .form', function(e){
+      
+      e.preventDefault()
+      
+      const inputName = $('#nome')
+      const inputEmail = $('#email')
+      
+      validate(inputName)
+      validate(inputEmail)
+      
+      if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+         console.log('Verificar os campos obrigatórios')
+         return false
+      } else {
+         $(this).submit()
+      }
+      
+   })
+   
+   /* Disparo para validação do campo por meio do blur */
+   $('body').on('blur', '#nome', function(){
+      validate($(this))
+   })
+   
+   $('body').on('blur', '#email', function(){
+      validate($(this))
+   })
+   
+   /* Disparos com ultilização de plugin jQuery Master */
+   $('body').on('blur', '#cpf', function(){
+      validate($(this))
+      $(this).mask('000.000.000-00');
+   })
+   
+});

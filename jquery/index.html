@@ -21,18 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="products.html">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -44,9 +42,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="caption">
-                        <h2>Ecommerce HTML Template</h2>
+                        <h2>Nova coleção</h2>
                         <div class="line-dec"></div>
-                        <p>HTML Template can be converted into your desired CMS theme. </p>
+                        <p>Confira os novos itens da nossa nova coleção de roupas</p>
                     </div>
                 </div>
             </div>
@@ -214,16 +212,70 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
-                        <p>WebStore &copy; Todos os direitos reservados
+                        <p>WebStore &copy; Todos os direitos reservados</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Sobre nós</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contato" class="visually-hidden">
+
+            <form action="post" class="form">
+
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                  <small id="helpId" class="text-muted">Digite um nome válido</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                    <small id="helpId" class="text-muted">Digite um e-mail válido</small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCpf">
+                    <small id="helpId" class="text-muted">Digite um cpf válido</small>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+            
+            </form>
+
+        </div>
+
+        <div id="sobre" class="visually-hidden">
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dicta iusto ullam, corporis culpa aut autem illum eos, sint doloremque dolore deserunt magni accusamus deleniti asperiores perspiciatis sunt eius exercitationem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dicta iusto ullam, corporis culpa aut autem illum eos, sint doloremque dolore deserunt magni accusamus deleniti asperiores perspiciatis sunt eius exercitationem.</p>
+
+        </div>
+
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./vendor/jQueryMask/jquery.mask.min.js"></script>
+        
+        <!-- Scrpit customizado -->
         <script src="./js/custom.js"></script>
     </body>
     </html>
